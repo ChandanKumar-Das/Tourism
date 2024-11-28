@@ -30,6 +30,8 @@ export function Adventure () {
         </div>
      
      <Card1 data={AdventureData.cardData}/>
+   
+    
 
       </div>
         </>
