@@ -1,21 +1,20 @@
+import { useEffect, useState } from "react";
 import { youtubevideosData } from "../constants/constant"
 import { FaYoutube } from "react-icons/fa6";
-export function Youtube (){
+import { Flag } from "./Animations/Flag";
 
+
+export function Youtube (){
+  
     return(
         <>
          <div className="max-w-[1250px] mx-auto pt-8 pb-10">
-          <div className="flex-cols justify-center items-center">
-            <div className="flex  gap-4 justify-center items-center px-16 pt-4">
-              <img
-                src="https://africanscenicsafaris.com/images/contacts-r-icon.svg"
-                alt="logo"
-              />
-              <h3 className="uppercase text-[#15a1b4] font-medium text-[170%] font-haboro-soft">
-                {'Subscribe to African Scenic Safaris on YouTube'}
+          <div className="flex flex-wrap gap-4 justify-center items-center px-4 pt-4">
+              <Flag/>
+              <h3 className="uppercase text-[#15a1b4] font-medium text-lg md:text-lg lg:text-3xl font-haboro-soft">
+              {'Subscribe to African Scenic Safaris on YouTube'}
               </h3>
             </div>
-          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 py-8">
       {youtubevideosData.map((video) => (

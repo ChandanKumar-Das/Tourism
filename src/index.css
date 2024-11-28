@@ -2,9 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* 
 @import url('https://example.com/path-to-haboro-soft-font.css');
 
 body {
   font-family: 'Haboro-Soft', sans-serif;
+} */
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
 }

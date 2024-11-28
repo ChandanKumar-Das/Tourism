@@ -1,23 +1,26 @@
 import { BlogsData } from "../constants/constant";
 import { BiLogoWhatsapp } from "react-icons/bi";
+import Draggable from "react-draggable";
+import { Flag } from "./Animations/Flag";
 
 export function Blogs() {
   return (
     <>
       <div className="max-w-[1250px] mx-auto pt-16 pb-10">
         {/* <div className="max-w-[85%] mx-auto pt-[150px]"> */}
-          <div className="flex-cols justify-center items-center">
-            <div className="flex  gap-4 justify-center items-center px-16 pt-4">
-              <img
-                src="https://africanscenicsafaris.com/images/contacts-r-icon.svg"
-                alt="logo"
-              />
-              <h3 className="uppercase text-[#15a1b4] font-medium text-[170%] font-haboro-soft">
+          
+
+          <div className="flex flex-wrap gap-4 justify-center items-center px-4 pt-4">
+     
+             <Flag/>
+   
+              <h3 className="uppercase text-[#15a1b4] font-medium text-lg md:text-lg lg:text-3xl font-haboro-soft">
                 {BlogsData.titel}
               </h3>
             </div>
-          </div>
 
+            
+           
           <ul className="grid md:grid-cols-3 grid-cols-1 gap-4 p-4 md:p-0 mt-16 mb-6 ">
             {BlogsData.cardData.map((items, index) => (
               <li

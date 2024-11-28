@@ -4,8 +4,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export function Card1({ data }) {
-  //console.log(props)
+export function Card1({ data,value }) {
+  //console.log(props),value
 
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -88,8 +88,9 @@ export function Card1({ data }) {
     ))}
   </Slider>
   </div>
-) : (
-  <ul className="grid p-4 md:p-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4 mb-6 overflow-x-auto">
+) : value !='EX' ? (
+  
+  <ul className={`grid p-4 md:p-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-4 mb-6 overflow-x-auto`}>
     {data.map((items, index) => (
       <li
         key={index}
@@ -114,7 +115,31 @@ export function Card1({ data }) {
       </li>
     ))}
   </ul>
-)}
+):<ul className={`grid p-4 md:p-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-4 mt-4 mb-6 overflow-x-auto`}>
+{data.map((items, index) => (
+  <li
+    key={index}
+    className="relative overflow-hidden flex items-center cursor-pointer group"
+  >
+    <img
+      src={items.image}
+      className="transition-transform duration-500 ease-in-out transform group-hover:scale-110"
+      alt="img"
+    />
+    <div className="absolute inset-0 bg-black bg-opacity-10 transition-all duration-500"></div>
+    <div className="absolute bottom-0 w-full bg-gradient-to-t from-black via-black/50 to-transparent text-center p-4">
+      <div className="transition-transform duration-500 group-hover:-translate-y-5">
+        <h1 className="uppercase text-white font-bold text-2xl">
+          {items.titel1}
+        </h1>
+        <h3 className="uppercase text-white text-lg pt-2 font-semibold">
+          {items.titel2}
+        </h3>
+      </div>
+    </div>
+  </li>
+))}
+</ul>}
 
     </>
   );

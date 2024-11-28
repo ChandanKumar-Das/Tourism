@@ -2,6 +2,7 @@
 import { WhyChoosUsData } from "../constants/constant"
 import { FcOk } from "react-icons/fc";
 import { SiWhatsapp } from "react-icons/si";
+import { Flag } from "./Animations/Flag";
 export function WhyChooseUs(){
     return(
         <>
@@ -14,11 +15,7 @@ export function WhyChooseUs(){
               {WhyChoosUsData.titel}
             </h2>
             <div className="flex flex-wrap gap-4 justify-center items-center px-4 pt-4">
-              <img
-                src="https://africanscenicsafaris.com/images/contacts-r-icon.svg"
-                alt="logo"
-                className="w-[40px] md:w-[30px]"
-              />
+             <Flag/>
               <h3 className="uppercase text-[#15a1b4] font-medium text-lg md:text-lg lg:text-1xl font-haboro-soft">
                 {WhyChoosUsData.subTitle}
               </h3>

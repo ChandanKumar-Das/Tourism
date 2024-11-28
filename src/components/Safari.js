@@ -1,4 +1,5 @@
 import { safaridata } from "../constants/constant"
+import { Flag } from "./Animations/Flag"
 import { Card1 } from "./cards/card1"
 
 export function Safari () {
@@ -11,11 +12,7 @@ export function Safari () {
               {safaridata.titel}
             </h2>
             <div className="flex flex-wrap gap-4 justify-center items-center px-4 pt-4">
-              <img
-                src="https://africanscenicsafaris.com/images/contacts-r-icon.svg"
-                alt="logo"
-                className="w-[40px] md:w-[30px]"
-              />
+              <Flag/>
               <h3 className="uppercase text-[#15a1b4] font-medium text-lg md:text-lg lg:text-1xl font-haboro-soft">
                 {safaridata.subTitle}
               </h3>

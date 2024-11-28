@@ -6,8 +6,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'haboro-soft': ['Haboro-Soft', 'sans-serif'],
-          montserrat: ['Montserrat', 'sans-serif'],
+        //'haboro-soft': ['Haboro-Soft', 'sans-serif'],
+          //montserrat: ['Montserrat', 'sans-serif'],
+          sans: ['Sen', 'ui-sans-serif', 'system-ui']
       },
     },
   },
