@@ -46,7 +46,7 @@ export function Navbar() {
             </div>
 
             {/* Mobile Menu Button */}
-            <div className="flex md:hidden">
+            <div className="flex lg:hidden">
               <button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-[#454442] focus:outline-none"

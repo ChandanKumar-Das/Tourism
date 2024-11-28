@@ -4,8 +4,8 @@ import { Card1 } from "./cards/card1"
 export function Safari () {
        return(
         <>
-       <div className="max-w-[1250px] mx-auto mt-10 pb-10">
-        <div className="max-w-[85%] mx-auto md:pt-[100px] lg:pt-[150px] text-center">
+       <div className="max-w-[1250px] mx-auto pt-6 md:pt-0 pb-10">
+        <div className="max-w-[85%] mx-auto md:pt-[70px] lg:pt-[80px] text-center">
           <div className="flex flex-col justify-center items-center">
             <h2 className="uppercase text-[#2d3e40] text-2xl md:text-3xl lg:text-[36px] font-semibold font-montserrat">
               {safaridata.titel}

@@ -18,7 +18,7 @@ export function Blogs() {
             </div>
           </div>
 
-          <ul className="grid grid-cols-3 gap-4 mt-16 mb-6 ">
+          <ul className="grid md:grid-cols-3 grid-cols-1 gap-4 p-4 md:p-0 mt-16 mb-6 ">
             {BlogsData.cardData.map((items, index) => (
               <li
                 key={index}
