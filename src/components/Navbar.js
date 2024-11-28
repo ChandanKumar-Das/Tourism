@@ -14,7 +14,7 @@ export function Navbar() {
             <div className="w-[50%] md:w-[30%]">
               <img
                 src={logo}
-                className="w-[70%] md:w-[35%] cursor-pointer"
+                className="w-[30%] md:w-[35%] cursor-pointer"
                 alt="logo"
               />
             </div>
@@ -57,7 +57,7 @@ export function Navbar() {
                   viewBox="0 0 24 24"
                   strokeWidth="2"
                   stroke="currentColor"
-                  className="w-14 h-14"
+                  className="w-10 h-10"
                 >
                   {isMenuOpen ? (
                     <path

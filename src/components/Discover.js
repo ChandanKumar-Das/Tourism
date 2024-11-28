@@ -27,7 +27,7 @@ export function Discover() {
         </div>
         </div>
         {/* Card Section */}
-        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-4 mb-6">
+        <ul className="grid grid-cols-1 px-4 md:p-0 sm:grid-cols-2 md:grid-cols-4 gap-6 mt-4 mb-6">
           {DiscoverData.cardData.map((item, index) => (
             <li
               className="relative overflow-hidden flex items-center cursor-pointer group"

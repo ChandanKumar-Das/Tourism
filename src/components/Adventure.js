@@ -2,6 +2,8 @@ import { AdventureData } from "../constants/constant"
 import { Card1 } from "./cards/card1"
 
 export function Adventure () {
+
+ 
        return(
         <>
        <div className="max-w-[1250px] mx-auto  pb-4">
@@ -26,12 +28,9 @@ export function Adventure () {
             </p>
           </div>
         </div>
-        
-        <ul className="grid grid-cols-4 gap-4 mt-4 mb-6">
-            <Card1 data={AdventureData.cardData}/>
-        </ul>
+     
+     <Card1 data={AdventureData.cardData}/>
 
-        
       </div>
         </>
        )
