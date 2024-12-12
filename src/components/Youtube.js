@@ -54,7 +54,7 @@ export function Youtube (){
              className="uppercase items-center transition duration-500 ease-in-out inline-flex mt-8 font-semibold cursor-pointer font-[Haboro-Soft] 
         text-[17px] px-6 py-3 rounded-full  bg-[#6eb43f] hover:bg-[#3c681e] text-white">
               <FaYoutube   className="text-2xl"/>
-                <div className="pl-3">{'READ MORE BLOGS'}</div>  
+                <div className="pl-3">{'SUBSCRIBE ON YOUTUBE'}</div>  
             </div>
         </div>
           </div>

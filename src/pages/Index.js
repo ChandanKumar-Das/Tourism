@@ -30,8 +30,8 @@ export function Index (){
         <MoreFeatures/>
         <Blogs/>
         <Youtube/>
-        {/* <Reviews/> */}
-        {/* <Footer/> */}
+        <Reviews/>
+        <Footer/>
         </div>
         </>
     )

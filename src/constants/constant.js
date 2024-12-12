@@ -444,6 +444,9 @@ export const footerData = {
       "VOLUNTEERING",
       "TANZANIA SAFARI COST",
       "BLOG",
+      "Dig Deep Extension",
+      "Kilimanjaro Climb Guide",
+      "Tanzania Travel Guide",
       "CONTACT US",
     ],
   };
