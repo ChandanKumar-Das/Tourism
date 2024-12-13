@@ -44,14 +44,14 @@ export  function Footer() {
         <div className="sm:flex grid grid-cols-1  justify-between w-full gap-6 py-8 border-b border-green-600 items-center">
         <div className="sm:flex grid grid-cols-1 w-full items-center gap-4 mt-4">
           <p className="text-gray-700 flex items-center">
-            <span className="text-[#00535e] hover:text-green-600 text-2xl font-bold mr-2">{contact.phone}</span>
+            <span className="text-[#00535e] hover:text-green-600 text-md sm:text-2xl font-bold mr-2">{contact.phone}</span>
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
               alt="WhatsApp"
               className="w-8 h-8 inline"
             />
           </p>
-          <p className="text-[#00535e] hover:text-green-600 text-2xl font-bold">
+          <p className="text-[#00535e] hover:text-green-600 text-md sm:text-2xl font-bold">
             <a href={`mailto:${contact.email}`} >
               {contact.email}
             </a>
